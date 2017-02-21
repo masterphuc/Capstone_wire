@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Big Nerd Ranch D3 Blog Post</title>
+    <link rel="stylesheet" href="application.css" />
+      <link rel="stylesheet" href="nouislider.css" />
+  </head>
+
+  <body>
+    <audio id="audioElement" src="Klrx%20-%20Blossom.mp3" ></audio>
+    <div>
+      <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
+      <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
+      <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+      <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+        <!--
+        <input id="rVal" type="range"  min="0" max="255" step="1" value="28" onchange="showValue(this.value, 'rCurr')" /> <span id="rCurr">28</span>
+        <input id="gVal" type="range"  min="0" max="255" value="107" step="1" />
+        <input id="bVal" type="range"  min="0" max="255" value="160" step="1" /> -->
+        
+        <div id="colorpicker">
+	<div class="sliders" id="red"></div>
+	<div class="sliders" id="green"></div>
+	<div class="sliders" id="blue"></div>
+	
+
+	<div class="result"></div>
+</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+   
+      <script src="nouislider.js"></script>
+      <script src="wNumb.js"></script>
+       <script src="app.js"></script>
+  </body>
+</html>

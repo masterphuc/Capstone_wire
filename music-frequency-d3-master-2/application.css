@@ -1,0 +1,9 @@
+body{
+    background-color: white;
+  width: 200px;
+  height: 50px; 
+  transition: all 0s linear;
+  //-webkit-transition: all .2s linear;
+  //-moz-transition: all .2s linear;  
+  //-o-transition: all .2s linear;
+}
